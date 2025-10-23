@@ -1,0 +1,34 @@
+function showPage(pageId) {
+   
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+    
+   
+    const selectedPage = document.getElementById(pageId);
+    if (selectedPage) {
+        selectedPage.classList.add('active');
+    }
+}
+
+
+function buyProduct(productName) {
+    alert("Anda telah memilih untuk membeli: " + productName + ". Terima kasih!");
+}
+
+
+function validateForm() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    if (!name || !email || !message) {
+        alert("Semua field harus diisi!");
+        return false;
+    }
+    alert("Pesan Anda telah dikirim. Terima kasih!");
+    return true;
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    showPage('home');
+});
