@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Beli Sparepart Motor</title>
+   <link rel="stylesheet" href="style.css">
+    <script src="p.js"></script>
+</head>
+<body>
+    <header>
+        <h1>GUNTUR Berkah Jaya</h1>
+    </header>
+    <nav>
+        <a onclick="showPage('home')">Beranda</a>
+        <a onclick="showPage('products')">Produk</a>
+        <a onclick="showPage('contact')">Kontak</a>
+    </nav>
+
+
+    <div id="home" class="page">
+        <h2>Selamat Datang di Toko Sparepart Motor Kami!</h2>
+        <p>Kami menyediakan berbagai sparepart motor berkualitas tinggi dengan harga terjangkau. Jelajahi produk kami atau hubungi kami untuk informasi lebih lanjut.</p>
+        <img src="t.jpg" alt="Sparepart Motor" style="width:100%; border-radius:8px;">
+    </div>
+
+     <div id="products" class="page">
+        <h2>Daftar Produk Sparepart Motor</h2>
+        <div class="product">
+            <img src="fdr.png" alt="Ban Motor">
+            <div>
+                <h3>Ban Motor</h3>
+                <p>Harga: Rp 275.000</p>
+                <button onclick="buyProduct('Ban Motor')">Beli Sekarang</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="rantai.jpg" alt="Rantai Motor">
+            <div>
+                <h3>Rantai Motor</h3>
+                <p>Harga: Rp 200.000</p>
+                <button onclick="buyProduct('Rantai Motor')">Beli Sekarang</button>
+            </div>
+        </div>
+        <div class="product">
+           <img src="SPX2.jpg" alt="oli">
+            <div>
+                <h3>SPX2</h3>
+                <p>Harga: Rp70.000</p>
+                <button onclick="buyProduct('Oli Mesin')">Beli Sekarang</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="spion.jpg" alt="spion motor">
+            <div>
+                <h3>spion 1 set</h3>
+                <p>Harga: Rp 25.000</p>
+                <button onclick="buyProduct('as roda depan')">Beli Sekarang</button>
+            </div>
+        </div>
+         <div class="product">
+            <img src="oli gardan.jpeg" alt="oli gardan">
+            <div>
+                <h3>oli gardan</h3>
+                <p>Harga: Rp 15.000</p>
+                <button onclick="buyProduct('as roda depan')">Beli Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    
+   <div id="contact" class="page">
+        <h2>Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan tentang produk atau ingin memesan, isi formulir di bawah ini.</p>
+        <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Nama Anda">
+            <input type="email" id="email" placeholder="Email Anda">
+            <textarea id="message" placeholder="Pesan Anda" rows="5"></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+        <a href="https://www.instagram.com/abdan.isa_?igsh=MXVkcHE2MWNzZW16aQ==">
+            <img src="ig.jpg" alt="ig" width="100">
+        </a>
+
+    </div>
+    <footer>
+        <p>&copy; 2025 Toko Sparepart Motor Honda. Semua hak dilindungi.</p>
+    </footer>
+
+    
+</body>
+</html>
