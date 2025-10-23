@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffefe;
+}
+
+header {
+    background-color: #2493c6;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2d1986;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    display: none; /* Semua halaman disembunyikan secara default */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.page.active {
+    display: block; /* Hanya halaman aktif yang ditampilkan */
+}
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2d1986;
+    color: white;
+}
